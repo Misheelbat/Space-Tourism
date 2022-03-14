@@ -13,7 +13,7 @@
 }
 
 /* Background image */
-.homePage {
+.App {
 	background-image: url(/public/assets/home/background-home-mobile.jpg);
 }
 
@@ -28,7 +28,7 @@
 	background-image: url(/public/assets/technology/background-technology-mobile.jpg);
 }
 @media (min-width: 550px) {
-	.homePage {
+	.App {
 		background-image: url(/public/assets/home/background-home-tablet.jpg);
 	}
 	.destinationPage {
@@ -43,7 +43,7 @@
 }
 
 @media (min-width: 800px) {
-	.homePage {
+	.App {
 		background-image: url(/public/assets/home/background-home-desktop.jpg);
 	}
 	.destinationPage {

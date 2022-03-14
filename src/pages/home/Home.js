@@ -9,7 +9,7 @@ export default function Home() {
 	const currentPage = useBgContext();
 
 	useEffect(() => {
-		currentPage.setPage('homePage');
+		currentPage.setPage('');
 	}, [currentPage]);
 
 	return (
