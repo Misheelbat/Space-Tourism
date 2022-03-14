@@ -20,8 +20,8 @@ export default function Navbar() {
 					className="nav-button"
 					src={
 						navToggle
-							? '/assets/shared/icon-close.svg'
-							: '/assets/shared/icon-hamburger.svg'
+							? 'assets/shared/icon-close.svg'
+							: 'assets/shared/icon-hamburger.svg'
 					}
 					alt="navigation dropdown button"
 				/>
