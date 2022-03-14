@@ -33,22 +33,22 @@ export default function Navbar() {
 					className="nav-links hover-underline"
 				>
 					<li>
-						<NavLink to="/">
+						<NavLink to="/Space-Tourism/">
 							<span>01</span>Home
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="destination">
+						<NavLink to="Space-Tourism/destination">
 							<span>02</span>Destination
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="crew">
+						<NavLink to="Space-Tourism/crew">
 							<span>03</span>Crew
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="tech">
+						<NavLink to="Space-Tourism/tech">
 							<span>04</span>Technology
 						</NavLink>
 					</li>
