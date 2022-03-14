@@ -18,7 +18,7 @@ function App() {
 			<BrowserRouter>
 				<Navbar />
 				<Routes>
-					<Route path="/Space-Tourism" element={<Home />} />
+					<Route path="/Space-Tourism/" element={<Home />} />
 					<Route path="/Space-Tourism/destination" element={<Destination />} />
 					<Route path="/Space-Tourism/crew" element={<Crew />} />
 					<Route path="/Space-Tourism/tech" element={<Tech />} />
