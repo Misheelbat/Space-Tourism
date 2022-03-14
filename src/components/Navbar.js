@@ -9,7 +9,7 @@ export default function Navbar() {
 	return (
 		<header className="nav-header flex">
 			<div className="nav-logo">
-				<img src="/assets/shared/logo.svg" alt="site logo" />
+				<img src="assets/shared/logo.svg" alt="site logo" />
 			</div>
 			<button
 				className="m-nav-toggle"
