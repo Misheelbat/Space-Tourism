@@ -26,7 +26,7 @@ export default function Home() {
 				</p>
 			</div>
 			<div>
-				<Link to="/destination" className="btn-explore">
+				<Link to="/Space-Tourism/destination" className="btn-explore">
 					Explore
 				</Link>
 			</div>
