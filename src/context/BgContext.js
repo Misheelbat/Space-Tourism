@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react';
 const BackgroundContext = createContext();
 
 export const BgContextProvider = ({ children }) => {
-	const [page, setPage] = useState('');
+	const [page, setPage] = useState('homePage');
 	return (
 		<BackgroundContext.Provider value={{ page, setPage }}>
 			{children}
