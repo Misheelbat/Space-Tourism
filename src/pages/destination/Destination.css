@@ -1,0 +1,140 @@
+/* typography */
+
+
+.dest-name {
+	font-family: var(--ff-belle);
+	text-transform: uppercase;
+	color: rgb(var(--clr-text-white));
+	font-size: var(--fs-800);
+}
+.dest-info p:nth-child(1) {
+	font-family: var(--ff-bar-con);
+	font-size: 14px;
+	letter-spacing: 2.36px;
+	text-transform: uppercase;
+	color: rgb(var(--clr-text-blue));
+}
+.dest-info p:nth-child(2) {
+	font-family: var(--ff-belle);
+	font-size: 28px;
+	text-transform: uppercase;
+	color: rgb(var(--clr-text-white));
+	margin-top: 0.2em;
+}
+.dest-footer {
+	border-top: 1px solid #383b4b;
+	padding-top: 28px;
+	margin-top: 54px;
+}
+/* ------------ */
+
+/* site button navigation */
+.dest-nav > * {
+	font-family: var(--ff-bar-con);
+	font-size: var(--fs-400);
+	color: rgb(var(--clr-text-blue));
+	letter-spacing: 2.7px;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: var(--underline-gap, 1em) 0;
+	border: 0;
+	background-color: transparent;
+	border-bottom: 0.2rem solid rgba(var(--clr-text-white), 0);
+}
+.dest-nav > *:not(:last-child) {
+	margin-right: 2.1875rem;
+}
+.dest-nav > *:hover,
+.dest-nav > *:focus {
+	border-color: rgba(var(--clr-text-white), 0.5);
+}
+.dest-nav > .active {
+	border-color: rgba(var(--clr-text-white), 1);
+}
+/* ------------ */
+
+/* grid */
+
+.des-container {
+	display: grid;
+	text-align: center;
+	place-items: center;
+	padding-inline: 1rem;
+}
+
+.des-container {
+	--flow-space: 2rem;
+	grid-template-areas:
+		'title'
+		'image'
+		'site-nav'
+		'content';
+	padding-bottom: 4rem;
+}
+.des-container > * {
+	max-width: 50ch;
+}
+.dest-title {
+	grid-area: title;
+	width: max-content;
+}
+
+.dest-image {
+	grid-area: image;
+	max-width: 50%;
+}
+
+.dest-nav {
+	grid-area: site-nav;
+}
+.destination-right {
+	grid-area: content;
+}
+@media (min-width: 550px) {
+	.dest-title {
+		justify-self: start;
+		margin-top: 2rem;
+	}
+	.dest-footer {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+@media (min-width: 800px) {
+	.des-container {
+		grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0px, 40rem)) minmax(
+				1rem,
+				1fr
+			);
+		place-content: center;
+		text-align: left;
+	}
+
+	.dest-title {
+		justify-self: start;
+		align-self: start;
+	}
+
+	.des-container {
+		justify-items: start;
+		align-content: start;
+
+		grid-template-areas:
+			'. title title .'
+			'. image site-nav .'
+			'. image content .';
+	}
+	.dest-image {
+		max-width: 90%;
+		align-self: end;
+	}
+	.dest-footer {
+		justify-content: start;
+		column-gap: 5rem;
+	}
+	.destination-right {
+		margin-top: 0;
+	}
+}
+/* ------------ */
